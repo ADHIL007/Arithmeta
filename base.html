@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Operations</title>
+<link  rel="stylesheet"  href="base.css">
+<!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+</head>
+<body >
+<nav class="navbarb">
+<a href="#" class="head1">Arithmetic Operations</a>
+<ul class="nav-links">
+    <li><a href="home.html" class="nav-items"><button type="button" class="btnb">Home</button></a></li>
+        <li><a href="about.html" class="nav-items"><button type="button" class="btnb">About</button></a></li>
+            <li><a href="contact.html" class="nav-items"><button type="button" class="btnb">Contact Us</button></a></li>
+</ul>
+</nav>
+
+<form>
+    <label for="selectbox">What operation  you want to perform ?</label>
+  <select class="selectbox" name ="selectbox"id="select" style="height:40px;width:200px;">
+        <option value="+">+&nbsp;ADDITION</option>
+        <option value="-">- &nbsp;SUBSTRACTION</option>
+        <option value="*">* &nbsp;MULTIPLICATION</option>
+        <option value="/">/ &nbsp;DIVISION</option>
+        <option value="%" >%&nbsp;REMINDER</option>
+    </select>
+   
+<button type="button" onclick="onButtonClick()" id="hide4" class="btn3">Submit</button>
+<br><br><div class="hide" id="hide1">
+    <label for="t1">Enter First number&nbsp;</label>
+    <input type="number" class="txt6" id="t1" required><br><br>
+    
+    <label for="t2">Enter Second number</label>
+    <input type="number" class="txt6" id="t2" required>
+
+    <button type="button" onclick="calc()" class="btn3">Result</button>
+  
+  <br><br>
+  <div class=hide id="hide3">
+    Answer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="text" class="txt6" id="hide2" >
+    <input type="reset" class="btn3" id="t2" onclick="hide5()">
+</div>
+    </div>
+
+</form>
+
+
+</body>
+<script  src="script.js" async></script>
+</html>
